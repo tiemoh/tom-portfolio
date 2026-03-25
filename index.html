@@ -22,7 +22,8 @@
         <nav class="topbar">
           <a class="wordmark" href="#top">Tom Holgate</a>
           <div class="topbar-links">
-            <a href="#projects">Projects</a>
+            <a href="#work">Work</a>
+            <a href="#personal">Personal</a>
             <a href="#about">About</a>
             <a href="#contact">Contact</a>
           </div>
@@ -31,13 +32,15 @@
         <div class="hero-grid" id="top">
           <section class="hero-copy">
             <p class="eyebrow">Portfolio</p>
-            <h1>Small apps with clear outcomes.</h1>
+            <h1>Work thinking and personal builds.</h1>
             <p class="lead">
-              A collection of practical web apps and experiments focused on simple
-              interaction, useful tooling, and clean front-end delivery.
+              A portfolio split into two tracks: work-facing product concepts and
+              personal projects. The work side is for commercial UI thinking; the
+              personal side is for small shipped apps and experiments.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button primary" href="#work">View Work</a>
+              <a class="button secondary" href="#personal">View Personal</a>
               <a class="button secondary" href="https://github.com/tiemoh" target="_blank" rel="noreferrer">
                 GitHub
               </a>
@@ -47,23 +50,101 @@
           <aside class="hero-panel">
             <p class="panel-label">Current Focus</p>
             <ul class="focus-list">
-              <li>Interactive mini games</li>
-              <li>Lightweight portfolio-ready frontends</li>
-              <li>Utility apps built with React and static hosting</li>
+              <li>Commercial geospatial product concepts</li>
+              <li>Clear dashboard and workflow UI thinking</li>
+              <li>Lightweight personal apps built for static hosting</li>
             </ul>
           </aside>
         </div>
       </header>
 
       <main>
-        <section class="projects-section" id="projects">
+        <section class="projects-section" id="work">
           <div class="section-heading">
-            <p class="eyebrow">Projects</p>
-            <h2>Selected work</h2>
+            <p class="eyebrow">Work</p>
+            <h2>Product examples for commercial teams</h2>
+          </div>
+
+          <div class="projects-grid work-grid">
+            <article class="project-card featured">
+              <div class="project-topline">
+                <span class="project-tag">Product Concept</span>
+                <span class="project-status">Work example</span>
+              </div>
+              <h3>Competitor Targeting Platform</h3>
+              <p>
+                A concept for a US market intelligence platform that connects workflow
+                setup and dashboard analysis. Users can define attack and defend
+                locations, build weighted metrics, and score opportunity around brand
+                and competitor locations.
+              </p>
+              <ul class="project-points">
+                <li>Metric builder using selectable attributes and adjustable weighting</li>
+                <li>Brand and competitor POI filtering with walk or drive catchments</li>
+                <li>US-specific demand, pressure, and whitespace opportunity scoring</li>
+              </ul>
+              <div class="project-links">
+                <a class="button primary" href="./work/competitor-targeting/">Open Work Example</a>
+                <a class="button secondary" href="https://github.com/tiemoh/tom-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
+              </div>
+            </article>
+
+            <article class="project-card case-study-panel" id="case-study">
+              <div class="project-topline">
+                <span class="project-tag">UI Outline</span>
+                <span class="project-status">First work item</span>
+              </div>
+              <h3>How the interface would work</h3>
+              <div class="case-study-grid">
+                <section>
+                  <h4>Workflow panel</h4>
+                  <p>
+                    Brand, audience, catchment type, travel mode, drive-time, and
+                    geography selection sit in a left-side configuration rail.
+                  </p>
+                </section>
+                <section>
+                  <h4>Metric builder</h4>
+                  <p>
+                    Analysts choose attributes from demographics, expenditure, and POI
+                    layers, then apply weightings to create reusable market metrics.
+                  </p>
+                </section>
+                <section>
+                  <h4>Map and catchments</h4>
+                  <p>
+                    The central canvas shows brand locations, competitor locations, and
+                    isoline-based walk or drive catchments with scored opportunity
+                    overlays.
+                  </p>
+                </section>
+                <section>
+                  <h4>Insight output</h4>
+                  <p>
+                    A right-side panel ranks attack and defend opportunities and
+                    explains which inputs are driving each score.
+                  </p>
+                </section>
+              </div>
+              <div class="case-study-note">
+                <strong>Example metric:</strong>
+                <span>
+                  Market Demand = population + local spend + food spend, combined into
+                  a weighted grocery potential score.
+                </span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="projects-section" id="personal">
+          <div class="section-heading">
+            <p class="eyebrow">Personal</p>
+            <h2>Small apps and experiments</h2>
           </div>
 
           <div class="projects-grid">
-            <article class="project-card featured">
+            <article class="project-card">
               <div class="project-topline">
                 <span class="project-tag">React</span>
                 <span class="project-status">Live now</span>
@@ -104,6 +185,28 @@
                 <a class="button secondary" href="https://github.com/tiemoh/tom-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
               </div>
             </article>
+
+            <article class="project-card project-card-wide">
+              <div class="project-topline">
+                <span class="project-tag">HTML / JS</span>
+                <span class="project-status">New demo</span>
+              </div>
+              <h3>Football Tactician</h3>
+              <p>
+                A tactical board for building in-possession and out-of-possession
+                shapes side by side, moving players with drag and drop, and importing
+                real squad names into the board.
+              </p>
+              <ul class="project-points">
+                <li>Two linked boards with a quick sync for shared player movement</li>
+                <li>Editable markers with shirt numbers, roles, and player names</li>
+                <li>Real player import via browser API search and squad loading</li>
+              </ul>
+              <div class="project-links">
+                <a class="button primary" href="./football/">Open Tactics Board</a>
+                <a class="button secondary" href="https://github.com/tiemoh/tom-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
+              </div>
+            </article>
           </div>
         </section>
 
@@ -114,13 +217,15 @@
           </div>
           <div class="about-panel">
             <p>
-              This portfolio is a lightweight index of projects I can share on a CV,
-              LinkedIn profile, or direct application. The focus is on compact builds
-              that are easy to demo, easy to host, and straightforward to explain.
+              This portfolio is now split between work-facing concepts and personal
+              shipped projects. The work side is intended to show product thinking,
+              interface structure, and decision-support design. The personal side is
+              where live apps and small technical builds sit.
             </p>
             <p>
-              As more apps are published, this page can expand with screenshots, live
-              links, and short write-ups for each project.
+              As more examples are added, the work section can expand into deeper case
+              studies and the personal section can continue to grow as a lightweight
+              project gallery.
             </p>
           </div>
         </section>
