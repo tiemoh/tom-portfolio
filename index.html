@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tom Holgate | Portfolio</title>
+    <meta
+      name="description"
+      content="Small apps, tools, and experiments built by Tom Holgate."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <nav class="topbar">
+          <a class="wordmark" href="#top">Tom Holgate</a>
+          <div class="topbar-links">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid" id="top">
+          <section class="hero-copy">
+            <p class="eyebrow">Portfolio</p>
+            <h1>Small apps with clear outcomes.</h1>
+            <p class="lead">
+              A collection of practical web apps and experiments focused on simple
+              interaction, useful tooling, and clean front-end delivery.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#projects">View Projects</a>
+              <a class="button secondary" href="https://github.com/tiemoh" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          </section>
+
+          <aside class="hero-panel">
+            <p class="panel-label">Current Focus</p>
+            <ul class="focus-list">
+              <li>Interactive mini games</li>
+              <li>Lightweight portfolio-ready frontends</li>
+              <li>Utility apps built with React and static hosting</li>
+            </ul>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="projects-section" id="projects">
+          <div class="section-heading">
+            <p class="eyebrow">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card featured">
+              <div class="project-topline">
+                <span class="project-tag">React</span>
+                <span class="project-status">Live now</span>
+              </div>
+              <h3>Classic Snake</h3>
+              <p>
+                A browser-based Snake game with keyboard and mobile controls, grid-size
+                switching, pause and restart support, and a local leaderboard.
+              </p>
+              <ul class="project-points">
+                <li>Classic movement, food, growth, and game-over loop</li>
+                <li>Configurable grid sizes</li>
+                <li>Local score leaderboard stored in browser storage</li>
+              </ul>
+              <div class="project-links">
+                <a class="button primary" href="./snake/">Open Snake Demo</a>
+                <a class="button secondary" href="https://github.com/tiemoh/tom-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-topline">
+                <span class="project-tag">React</span>
+                <span class="project-status">Live now</span>
+              </div>
+              <h3>Golf Handicap Tracker</h3>
+              <p>
+                A small golf dashboard for logging rounds, tracking player handicaps,
+                exporting data, and keeping a casual group leaderboard in sync.
+              </p>
+              <ul class="project-points">
+                <li>Round logging and player management</li>
+                <li>Local browser storage for lightweight persistence</li>
+                <li>Built to be deployable as a static site</li>
+              </ul>
+              <div class="project-links">
+                <a class="button primary" href="./golf/">Open Golf App</a>
+                <a class="button secondary" href="https://github.com/tiemoh/tom-portfolio" target="_blank" rel="noreferrer">Portfolio Repo</a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>What this site is for</h2>
+          </div>
+          <div class="about-panel">
+            <p>
+              This portfolio is a lightweight index of projects I can share on a CV,
+              LinkedIn profile, or direct application. The focus is on compact builds
+              that are easy to demo, easy to host, and straightforward to explain.
+            </p>
+            <p>
+              As more apps are published, this page can expand with screenshots, live
+              links, and short write-ups for each project.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contact">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/tiemoh" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://github.com/tiemoh" target="_blank" rel="noreferrer">Contact via GitHub</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
