@@ -230,6 +230,23 @@ h3 {
     var(--surface);
 }
 
+.private-work-callout {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 24px 28px;
+  background:
+    linear-gradient(135deg, rgba(77, 92, 65, 0.08), rgba(255, 250, 242, 0.82)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.private-work-callout p {
+  max-width: 64ch;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .project-topline {
   display: flex;
   justify-content: space-between;
